@@ -1,0 +1,132 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  text-align: left;
+}
+.form input {
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+}
+.form input[type="submit"] {
+  background-color: #bbe4e9;
+  font-weight: bold;
+}
+.form input[type="button"] {
+  background-color: #bbe4e9;
+  font-weight: bold;
+}
+div.container {
+  width: 700px;
+}
+img.card-img {
+  opacity: 0.7;
+}
+a {
+  text-decoration: none;
+  color: #bbe4e9;
+}
+a.code-link {
+  text-decoration: none;
+  color: #ef5f9a;
+}
+footer {
+  text-align: center;
+  font-size: small;
+}
+.unit {
+  position: relative;
+  top: 5px;
+  right: 290px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.high-low,
+.real-feel,
+.humidity {
+  text-indent: 30px;
+  font-size: 22px;
+  font-weight: bolder;
+  font-style: italic;
+  position: relative;
+  bottom: 150px;
+  right: -20px;
+}
+.weather-comment {
+  text-indent: 20px;
+  font-size: 25px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.city {
+  text-indent: 20px;
+  font-size: x-large;
+}
+.temperature {
+  text-indent: 20px;
+  font-size: 35px;
+}
+.city {
+  font-weight: bold;
+  float: left;
+}
+.previsions {
+  font-weight: bold;
+  font-size: 23px;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 45px;
+}
+.previsions-temperature-min {
+  opacity: 0.7;
+}
+#current-time {
+  font-size: 20px;
+  font-weight: bold;
+}
+#current-temperature {
+  font-weight: bold;
+}
+#display-comment {
+  position: relative;
+  top: 40px;
+  right: 335px;
+}
+#city-search {
+  text-indent: 15px;
+  width: 65%;
+}
+#input-city:hover {
+  background: white;
+  color: #769cda;
+}
+#input-city {
+  transition: all 150ms ease-in-out;
+  height: 50px;
+  width: 100px;
+}
+#current-location:hover {
+  background: white;
+  color: #769cda;
+}
+#current-location {
+  transition: all 150ms ease-in-out;
+  height: 50px;
+  width: 100px;
+}
+#current-date {
+}
+#greeting-message {
+}
+#date-greeting {
+  clear: both;
+}
+#icon {
+  position: relative;
+  top: 5px;
+  right: 290px;
+}
