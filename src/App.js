@@ -9,7 +9,7 @@ export default function App() {
       <div className="container">
         <div className="card bg-dark text-white">
           <img
-            src="/sun-cezanne-lestaque.jpg"
+            src="/levitan-nad-vechnym-pokoem.jpg"
             className="card-img"
             alt="background"
           />
