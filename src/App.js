@@ -14,7 +14,7 @@ export default function App() {
             alt="background"
           />
           <div className="card-img-overlay">
-            <Weather />
+            <Weather defaultCity="London" />
           </div>
         </div>
         <Footer />
