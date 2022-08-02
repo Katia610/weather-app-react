@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -13,6 +15,7 @@ export default function Weather(props) {
       realfeel: response.data.main.feels_like,
       mintemp: response.data.main.temp_min,
       maxtemp: response.data.main.temp_max,
+      date: new Date(response.data.dt * 1000),
     });
 
     setReady(true);
@@ -23,18 +26,18 @@ export default function Weather(props) {
       <div className="Weather">
         <div className="Date row" id="date-greeting">
           <h1 className="card-title date col-6 text-start" id="current-date">
-            [21 July 22]
+            <FormattedDate date={weatherData.date} />
           </h1>
           <h2
             className="card-text greeting col-6 text-end"
             id="greeting-message"
           >
-            [Good morning! +icon]
+            [Good morning! ☕]
           </h2>
         </div>
         <div className="time">
           <p className="card-text current-time text-start" id="current-time">
-            [11:13]
+            <FormattedTime date={weatherData.date} />
           </p>
         </div>
         <form className="form pt-2 pb-2">

@@ -116,11 +116,9 @@ footer {
   height: 50px;
   width: 100px;
 }
-#current-date {
-  font-size: 30px;
-}
+#current-date,
 #greeting-message {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 #date-greeting {
