@@ -124,7 +124,7 @@ footer {
 #date-greeting {
   clear: both;
 }
-#icon {
+canvas {
   position: relative;
   bottom: 20px;
   right: 270px;
