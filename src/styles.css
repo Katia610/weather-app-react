@@ -1,27 +1,27 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
   margin: 20px;
 }
 
-form {
+.App div.container {
+  width: 700px;
+}
+
+.Weather form {
   text-align: left;
 }
-.form input {
+.Weather .form input {
   border-radius: 25px;
   border: none;
   height: 50px;
 }
-.form input[type="submit"] {
-  background-color: #bbe4e9;
+.Weather .form input[type="submit"] {
+  background-color: #bcdbdf;
   font-weight: bold;
 }
-.form input[type="button"] {
-  background-color: #bbe4e9;
+.Weather .form input[type="button"] {
+  background-color: #bcdbdf;
   font-weight: bold;
-}
-div.container {
-  width: 700px;
 }
 
 a {
@@ -37,42 +37,30 @@ footer {
   font-size: small;
 }
 .unit {
-  position: relative;
-  top: 5px;
-  right: 290px;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
 }
 .high-low,
 .real-feel,
 .humidity {
-  text-indent: 60px;
   font-size: 20px;
   font-weight: bolder;
-  font-style: italic;
-  position: relative;
-  bottom: 150px;
-  right: -20px;
+  text-align: left;
 }
 .weather-comment {
-  text-indent: 20px;
   font-weight: bolder;
   font-size: 20px;
-  font-style: italic;
   text-transform: capitalize;
+  text-align: left;
 }
 .city {
-  text-indent: 20px;
-  font-size: x-large;
+  font-size: 25px;
+  font-weight: bold;
 }
 .temperature {
-  text-indent: 20px;
   font-size: 35px;
 }
-.city {
-  font-weight: bold;
-  float: left;
-}
+
 .previsions {
   font-weight: bold;
   font-size: 23px;
@@ -83,17 +71,11 @@ footer {
 .previsions-temperature-min {
   opacity: 0.7;
 }
-#current-time {
-  font-size: 25px;
-}
+
 #current-temperature {
   font-weight: bold;
 }
-#display-comment {
-  position: relative;
-  top: 40px;
-  right: 335px;
-}
+
 #city-search {
   text-indent: 15px;
   width: 65%;
@@ -117,8 +99,10 @@ footer {
   width: 100px;
 }
 #current-date,
-#greeting-message {
-  font-size: 28px;
+#greeting-message,
+#current-time {
+  font-size: 25px;
+  color: #606470;
 }
 
 #date-greeting {

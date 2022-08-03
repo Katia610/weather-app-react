@@ -6,7 +6,7 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="current-Weather row">
-        <div className="col">
+        <div className="col-6">
           <p>
             <div className="city" id="display-city">
               {props.defaultCity}
@@ -27,20 +27,20 @@ export default function WeatherInfo(props) {
             </div>
           </p>
         </div>
-      </div>
-      <div className="weather-details col">
-        <p>
-          <div className="high-low" id="high-low">
-            High / low: {Math.round(props.data.maxtemp)}°C /{" "}
-            {Math.round(props.data.mintemp)}°C
-          </div>
-          <div className="real-feel" id="real-feel">
-            Real Feel: {Math.round(props.data.realfeel)}°C
-          </div>
-          <div className="humidity" id="humidity">
-            Humidity: {props.data.humidity}%
-          </div>
-        </p>
+        <div className="weather-details col-6">
+          <p>
+            <div className="high-low" id="high-low">
+              High / low: {Math.round(props.data.maxtemp)}°C /{" "}
+              {Math.round(props.data.mintemp)}°C
+            </div>
+            <div className="real-feel" id="real-feel">
+              Real Feel: {Math.round(props.data.realfeel)}°C
+            </div>
+            <div className="humidity" id="humidity">
+              Humidity: {props.data.humidity}%
+            </div>
+          </p>
+        </div>
       </div>
     </div>
   );
