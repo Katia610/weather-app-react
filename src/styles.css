@@ -108,8 +108,3 @@ footer {
 #date-greeting {
   clear: both;
 }
-canvas {
-  position: relative;
-  bottom: 20px;
-  right: 270px;
-}

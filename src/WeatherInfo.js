@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
+import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
+import AdditionalTemperature from "./AdditionalTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -14,28 +16,17 @@ export default function WeatherInfo(props) {
             <div className="weather-comment" id="display-comment">
               {props.data.description}
             </div>
-            <div className="temperature">
-              <span id="current-temperature" />
-              <span className="unit">
-                {" "}
-                {Math.round(props.data.temperature)}°C{" "}
-              </span>
-              <WeatherIcon
-                code={props.data.icon}
-                alt={props.data.description}
-              />
-            </div>
+            <WeatherTemperature celsius={props.data.temperature} />
+            <WeatherIcon code={props.data.icon} alt={props.data.description} />
           </p>
         </div>
-        <div className="weather-details col-6">
+        <div className="weather-details col">
           <p>
-            <div className="high-low" id="high-low">
-              High / low: {Math.round(props.data.maxtemp)}°C /{" "}
-              {Math.round(props.data.mintemp)}°C
-            </div>
-            <div className="real-feel" id="real-feel">
-              Real Feel: {Math.round(props.data.realfeel)}°C
-            </div>
+            <AdditionalTemperature
+              max={props.data.maxtemp}
+              min={props.data.mintemp}
+              realfeel={props.data.realfeel}
+            />
             <div className="humidity" id="humidity">
               Humidity: {props.data.humidity}%
             </div>
