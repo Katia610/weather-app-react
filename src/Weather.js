@@ -19,6 +19,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       pressure: response.data.main.pressure,
+      city: response.data.name,
     });
 
     setReady(true);
