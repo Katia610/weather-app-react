@@ -15,11 +15,10 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      realfeel: response.data.main.feels_like,
-      mintemp: response.data.main.temp_min,
-      maxtemp: response.data.main.temp_max,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      pressure: response.data.main.pressure,
     });
 
     setReady(true);
@@ -49,17 +48,13 @@ export default function Weather(props) {
             <FormattedDate date={weatherData.date} />
           </h1>
           <h2
-            className="card-text greeting col-6 text-end"
-            id="greeting-message"
+            className="card-text current-time col-6 text-end"
+            id="current-time"
           >
-            [Good morning! ☕]
+            <FormattedTime date={weatherData.date} />
           </h2>
         </div>
-        <div className="time">
-          <p className="card-text current-time text-start" id="current-time">
-            <FormattedTime date={weatherData.date} />
-          </p>
-        </div>
+
         <form className="form pt-2 pb-2" onSubmit={handleSubmit}>
           <input
             type="text"

@@ -24,7 +24,7 @@
   font-weight: bold;
 }
 
-a {
+.WeatherTemperature a {
   text-decoration: none;
   color: #bbe4e9;
 }
@@ -36,12 +36,21 @@ footer {
   text-align: center;
   font-size: small;
 }
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
 .unit {
   font-size: 25px;
   font-weight: bold;
 }
-.high-low,
-.real-feel,
+.wind,
+.pressure,
 .humidity {
   font-size: 20px;
   font-weight: bolder;
@@ -99,7 +108,6 @@ footer {
   width: 100px;
 }
 #current-date,
-#greeting-message,
 #current-time {
   font-size: 25px;
   color: #606470;
