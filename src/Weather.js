@@ -4,6 +4,7 @@ import "./styles.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -56,7 +57,7 @@ export default function Weather(props) {
           </h2>
         </div>
 
-        <form className="form pt-2 pb-2" onSubmit={handleSubmit}>
+        <form className="form pt-2 pb-3" onSubmit={handleSubmit}>
           <input
             type="text"
             id="city-search"
@@ -68,6 +69,7 @@ export default function Weather(props) {
           <input type="button" id="current-location" value="Current" />
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {

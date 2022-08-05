@@ -28,6 +28,13 @@
   text-decoration: none;
   color: #bbe4e9;
 }
+
+.WeatherInfo canvas {
+  position: relative;
+  bottom: 90px;
+  left: 135px;
+}
+
 a.code-link {
   text-decoration: none;
   color: #ef5f9a;
@@ -43,6 +50,7 @@ li {
 
 ul {
   padding-left: 0 !important;
+  margin-bottom: none;
 }
 
 .unit {
@@ -55,12 +63,15 @@ ul {
   font-size: 20px;
   font-weight: bolder;
   text-align: left;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 .weather-comment {
   font-weight: bolder;
   font-size: 20px;
   text-transform: capitalize;
   text-align: left;
+  font-style: italic;
 }
 .city {
   font-size: 25px;
@@ -79,6 +90,11 @@ ul {
 }
 .previsions-temperature-min {
   opacity: 0.7;
+}
+
+.forecast-day {
+  text-align: center;
+  font-size: 25px;
 }
 
 #current-temperature {
@@ -111,6 +127,10 @@ ul {
 #current-time {
   font-size: 25px;
   color: #606470;
+}
+
+#current-time {
+  padding-right: 32px;
 }
 
 #date-greeting {
