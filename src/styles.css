@@ -97,6 +97,10 @@ ul {
   font-size: 25px;
 }
 
+.forecast-temperature-min {
+  opacity: 0.7;
+}
+
 #current-temperature {
   font-weight: bold;
 }

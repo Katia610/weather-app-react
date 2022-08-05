@@ -21,6 +21,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       pressure: response.data.main.pressure,
       city: response.data.name,
+      coord: response.data.coord,
     });
 
     setReady(true);
@@ -69,7 +70,7 @@ export default function Weather(props) {
           <input type="button" id="current-location" value="Current" />
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coord={weatherData.coord} />
       </div>
     );
   } else {
