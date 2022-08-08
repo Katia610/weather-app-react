@@ -7,25 +7,27 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="current-weather row">
-        <div className="col-6">
+        <div className="col-7">
           <ul>
             <li className="city" id="display-city">
-              {props.data.city}
+              {props.data.city} <span className="hyphen">-</span>{" "}
+              <span className="weather-comment" id="display-comment">
+                {props.data.description}{" "}
+              </span>
             </li>
             <li>
-              <WeatherTemperature celsius={props.data.temperature} />
+              <WeatherTemperature celsius={props.data.temperature} />{" "}
+              <span>
+                <WeatherIcon
+                  code={props.data.icon}
+                  alt={props.data.description}
+                  size={60}
+                />
+              </span>
             </li>
-            <li className="weather-comment" id="display-comment">
-              {props.data.description}{" "}
-            </li>
-            <WeatherIcon
-              code={props.data.icon}
-              alt={props.data.description}
-              size={60}
-            />
           </ul>
         </div>
-        <div className="weather-details col">
+        <div className="weather-details col-5">
           <ul>
             <li className="humidity" id="humidity">
               Humidity: {props.data.humidity}%

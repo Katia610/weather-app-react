@@ -30,9 +30,6 @@
 }
 
 .WeatherInfo canvas {
-  position: relative;
-  bottom: 90px;
-  left: 135px;
 }
 
 a.code-link {
@@ -66,9 +63,9 @@ ul {
   padding-bottom: 8px;
   padding-top: 5px;
 }
-.weather-comment {
-  font-weight: bolder;
-  font-size: 20px;
+.weather-comment,
+.hyphen {
+  font-size: 18px;
   text-transform: capitalize;
   text-align: left;
   font-style: italic;
