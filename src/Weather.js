@@ -58,7 +58,7 @@ export default function Weather(props) {
           </h2>
         </div>
 
-        <form className="form pt-2 pb-3" onSubmit={handleSubmit}>
+        <form className="form pt-3 pb-4" onSubmit={handleSubmit}>
           <input
             type="text"
             id="city-search"
@@ -67,7 +67,6 @@ export default function Weather(props) {
             onChange={handleSearchCity}
           />
           <input className="m-1" type="submit" id="input-city" value="Search" />
-          <input type="button" id="current-location" value="Current" />
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coord={weatherData.coord} />
