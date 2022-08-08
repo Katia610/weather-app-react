@@ -50,7 +50,7 @@ li {
 
 ul {
   padding-left: 0 !important;
-  margin-bottom: -1rem;
+  margin-bottom: none;
 }
 
 .unit {
